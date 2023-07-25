@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="automation-learning" target="17" />
+      <module name="automation-learning" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

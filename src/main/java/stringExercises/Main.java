@@ -50,5 +50,58 @@ public class Main {
         System.out.println(StringExercises.extraFront("H"));
         System.out.println(StringExercises.extraFront("ab"));
 
+
+        //Given a string and a second "word" string, we'll say that the word matches the string if it appears at the front of the string, except its first char does not need to match exactly. On a match, return the front of the string, or otherwise return the empty string. So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". The word will be at least length 1.
+        //startWord("hippo", "hi") → "hi"
+        System.out.println(StringExercises.startWord("hippo", "hi"));
+        System.out.println(StringExercises.startWord("hippo", "xip"));
+        System.out.println(StringExercises.startWord("hippo", "i"));
+
+        //Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
+        //makeAbba("Hi", "Bye") → "HiByeByeHi"
+        System.out.println(StringExercises.makeAbba("Hy", "Bye"));
+
+
+        //Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
+        System.out.println(StringExercises.extraEnd("Hello"));
+
+
+        //Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
+        System.out.println(StringExercises.withoutEnd("Hello"));
+
+
+        //Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. The string length will be at least 2
+        System.out.println(StringExercises.left2("Hello"));
+
+
+        //Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.
+        System.out.println(StringExercises.withouEnd2("Hello"));
+        System.out.println(StringExercises.withouEnd2("abc"));
+
+
+        //Given a string and an int n, return a string made of the first and last n chars from the string. The string length will be at least n.
+        System.out.println(StringExercises.hasBad("badxx"));
+        System.out.println(StringExercises.hasBad("xbadxx"));
+        System.out.println(StringExercises.hasBad("xxxbadxx"));
+        System.out.println(StringExercises.hasBad(""));
+
+
+        //Given a string and an int n, return a string made of the first and last n chars from the string. The string length will be at least n.
+        System.out.println(StringExercises.nTwice("Hello", 2));
+        System.out.println(StringExercises.nTwice("Chocolate", 3));
+        System.out.println(StringExercises.nTwice("Chocolate", 1));
+
+
+        //Given two strings, append them together (known as "concatenation") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
+        System.out.println(StringExercises.conCat("abc","cat"));
+        System.out.println(StringExercises.conCat("dog","cat"));
+        System.out.println(StringExercises.conCat("","cat"));
+
+        //Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with "edited".
+        System.out.println(StringExercises.frontAgain("edited"));
+        System.out.println(StringExercises.frontAgain("edit"));
+        System.out.println(StringExercises.frontAgain("ed"));
+
+
     }
 }

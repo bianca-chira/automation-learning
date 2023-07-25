@@ -53,8 +53,7 @@ public class StringExercises {
         }
         if (b.length() > 0){
             last = b.substring(b.length()-1);
-        }
-        else{
+        }else{
             last = "@";
         }
         return first + last;
@@ -84,5 +83,60 @@ public class StringExercises {
             return str + str +str;
         }
     }
+    public static String startWord(String str, String word) {
+        if(str.length() >= word.length() && str.substring(1,word.length()).equals(word.substring(1))){
+            return str.substring(0, word.length());
+        }
+        else{
+            return "";
+        }
+    }
 
+    public static String makeAbba(String a, String b) {
+        return a+b+b+a;
+    }
+
+    public static String extraEnd(String str) {
+        return str.substring(str.length()-2) + str.substring(str.length()-2)+str.substring(str.length()-2);
+    }
+
+    public static String withoutEnd(String str) {
+        return str.substring(1, str.length() - 1);
+    }
+
+    public static String left2(String str) {
+        return str.substring(2) + str.substring(0,2);
+    }
+
+    public static String withouEnd2(String str) {
+        if(str.length() > 1){
+            return str.substring(1, str.length()-1);
+        }
+        else{
+            return "";
+        }
+    }
+
+    public static boolean hasBad(String str) {
+        return str.startsWith("bad") || str.length() >= 4 && str.startsWith("bad", 1);
+    }
+
+
+    public static String nTwice(String str, int n) {
+        return str.substring(0, n) + str.substring(str.length()- n);
+    }
+
+    public static String conCat(String a, String b) {
+        if(a.length()>0 && b.length()>0 && a.substring(a.length() -1).equals(b.substring(0,1))) {
+            return a + b.substring(1);
+        }
+        else {
+            return a + b;
+        }
+    }
+
+    public static boolean frontAgain(String str) {
+        return str.length() > 1 && str.substring(0, 2).equals(str.substring(str.length() - 2));
+
+    }
 }
