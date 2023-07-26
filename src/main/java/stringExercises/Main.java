@@ -103,5 +103,76 @@ public class Main {
         System.out.println(StringExercises.frontAgain("ed"));
 
 
+        //Given a string, if a length 2 substring appears at both its beginning and end, return a string without the substring at the beginning, so "HelloHe" yields "lloHe". The substring may overlap with itself, so "Hi" yields "". Otherwise, return the original string unchanged.
+        System.out.println(StringExercises.without2("HelloHe"));
+        System.out.println(StringExercises.without2("HelloHi"));
+        System.out.println(StringExercises.without2("Hi"));
+
+        //Given a string, if the first or last chars are 'x', return the string without those 'x' chars, and otherwise return the string unchanged.
+        System.out.println(StringExercises.withoutX("xHix"));
+        System.out.println(StringExercises.withoutX("Hix"));
+        System.out.println(StringExercises.withoutX("Hxix"));
+
+
+        //The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>".
+        System.out.println(StringExercises.makeTags("i","Yay"));
+        System.out.println(StringExercises.makeTags("i","Hello"));
+        System.out.println(StringExercises.makeTags("cite","Yay"));
+
+
+        //Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "". Note that str.length() returns the length of a string.
+        System.out.println(StringExercises.firstTwo("Hello"));
+        System.out.println(StringExercises.firstTwo("abcdefg"));
+        System.out.println(StringExercises.firstTwo("ab"));
+
+        //Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty (length 0).
+        System.out.println(StringExercises.comboString("Hello","Hi"));
+        System.out.println(StringExercises.comboString("hi","Hello"));
+        System.out.println(StringExercises.comboString("aaa","b"));
+
+        //Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start. The string length will be at least 2.
+        System.out.println(StringExercises.right2("Hello"));
+        System.out.println(StringExercises.right2("Hi"));
+        System.out.println(StringExercises.right2("Java"));
+
+
+        //Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2.
+        System.out.println(StringExercises.middleTwo("string"));
+        System.out.println(StringExercises.middleTwo("code"));
+        System.out.println(StringExercises.middleTwo("Practice"));
+
+
+        //Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length 2, use the first 2 chars. The string length will be at least 2.
+        System.out.println(StringExercises.twoChar("java",0));
+        System.out.println(StringExercises.twoChar("java",2));
+        System.out.println(StringExercises.twoChar("java",3));
+
+
+        //Given a string, return a string length 2 made of its first 2 chars. If the string length is less than 2, use '@' for the missing chars.
+        System.out.println(StringExercises.atFirst("hello"));
+        System.out.println(StringExercises.atFirst("hi"));
+        System.out.println(StringExercises.atFirst("h"));
+
+
+        //Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so "coding" yields "codign".
+        System.out.println(StringExercises.lastTwo("coding"));
+        System.out.println(StringExercises.lastTwo("cat"));
+        System.out.println(StringExercises.lastTwo("ab"));
+
+        //Given two strings, append them together (known as "concatenation") and return the result. However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string. So "Hello" and "Hi" yield "loHi". The strings may be any length.
+        System.out.println(StringExercises.minCat("Hello", "Hi"));
+        System.out.println(StringExercises.minCat("java", "Hello"));
+
+
+       //Given a string, return a version without the first 2 chars. Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
+        System.out.println(StringExercises.deFront("Hello"));
+        System.out.println(StringExercises.deFront("java"));
+        System.out.println(StringExercises.deFront("abc"));
+
+
+        //Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged. This is a little harder than it looks.
+        System.out.println(StringExercises.withoutX2("xHi"));
+        System.out.println(StringExercises.withoutX2("Hxi"));
+        System.out.println(StringExercises.withoutX2("Hi"));
     }
 }
