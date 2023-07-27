@@ -174,5 +174,6 @@ public class Main {
         System.out.println(StringExercises.withoutX2("xHi"));
         System.out.println(StringExercises.withoutX2("Hxi"));
         System.out.println(StringExercises.withoutX2("Hi"));
+
     }
 }
