@@ -219,7 +219,7 @@ public class JavaLogicExercises {
         }
     }
 
-    public  static boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+    public static boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
         if (equalOk) {
             return (a <= b && b <= c);
         } else {
@@ -234,7 +234,7 @@ public class JavaLogicExercises {
         return die1 + die2;
     }
 
-    public  static int greenTicket(int a, int b, int c) {
+    public static int greenTicket(int a, int b, int c) {
         if (a == b && b == c) {
             return 20;
         } else if (a == b || b == c || a == c) {
@@ -244,7 +244,7 @@ public class JavaLogicExercises {
         }
     }
 
-    public  static int sumLimit(int a, int b) {
+    public static int sumLimit(int a, int b) {
         String aString = String.valueOf(a);
         String sumString = String.valueOf(a + b);
         if (sumString.length() == aString.length()) {
@@ -253,8 +253,12 @@ public class JavaLogicExercises {
             return a;
         }
     }
-
-
 }
+
+
+
+
+
+
 
 
