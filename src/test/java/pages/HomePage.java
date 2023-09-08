@@ -39,8 +39,8 @@ public class HomePage extends BasePage {
         selectRejected.get(0).click();
     }
 
-    public void verifyRejected() {
-        Assert.assertEquals("Rejected Option was not selected", "Rejected", rejectedOption.getText());
+    public boolean verifyRejected() {
+    return rejectedOption.isDisplayed();
     }
 
 

@@ -56,11 +56,8 @@ public class LoginPage extends BasePage {
         return loginMessage.isDisplayed();
     }
 
-    public void verifyErrorMessage() {
-        errorMessage.isDisplayed();
+    public boolean verifyErrorMessage() {
+        return errorMessage.isDisplayed();
     }
-
-
-
 
 }

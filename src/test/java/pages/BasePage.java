@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 import java.time.Duration;
+import java.util.List;
 import java.util.function.Function;
 
 public class BasePage {
@@ -38,6 +39,9 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    public void waitUntilListIsVisible(List<WebElement> elementList){
+        wait.until((ExpectedConditions.visibilityOfAllElements(elementList)));
+    }
     public void waitUntilClickable(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }

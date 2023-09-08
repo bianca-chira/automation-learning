@@ -52,6 +52,7 @@ public class MyInfoPage extends BasePage {
     }
 
     public void goToMyInfoPage() {
+
         selectMyInfo.get(5).click();
     }
 
@@ -69,19 +70,23 @@ public class MyInfoPage extends BasePage {
 
     public void selectCountryArrow() {
         selectCountryArrow.click();
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
     }
 
     public void selectCountry() {
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        waitUntilVisible(countryAlgeria);
         countryAlgeria.click();
     }
 
     public void saveButtonClick() {
+
         saveButton.get(0).click();
     }
 
-    public void verifySuccessMessage() {
-        Assert.assertTrue("not updated", successMessage.isDisplayed());
+    public boolean verifySuccessMessage() {
+
+        return successMessage.isDisplayed();
     }
 
     public void addAtachbutt() {
@@ -103,24 +108,24 @@ public class MyInfoPage extends BasePage {
         saveButton.get(1).click();
     }
 
-    public void verifyAttachisthere(){
-        attach.isDisplayed();
+    public boolean verifyAttachisthere() {
+        return attach.isDisplayed();
     }
 
-    public void selectCheckbox(){
+    public void selectCheckbox() {
         checkbox.get(1).click();
     }
 
-    public void pressDeleteButton(){
+    public void pressDeleteButton() {
         delete.click();
     }
 
-    public void pressConfirmDeleteButton(){
+    public void pressConfirmDeleteButton() {
         confirmDeleteButton.click();
     }
 
-    public void showSuccessDelete(){
-        successDelete.isDisplayed();
+    public boolean showSuccessDelete() {
+        return successDelete.isDisplayed();
     }
 
 }
