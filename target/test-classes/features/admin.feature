@@ -20,7 +20,7 @@ Feature: Admin Page Scenario
       * I select the language Colognian(Germany) from that list
       * I press the Save to add this new language to my packages
       Then I should be able to see the confirmation message that the language was successfully saved
-@
+
       Scenario: As a user I want to add a new job
         * I select the Job Titles option from the Job menu dropdown
         * I click the Add button to add a new job

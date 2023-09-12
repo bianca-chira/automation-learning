@@ -1,5 +1,3 @@
-
-
 Feature: Change password page scenarios
 
   Scenario: As a user I am able to change my password

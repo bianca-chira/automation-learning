@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +9,6 @@ import java.util.List;
 
 public class AdminPage extends BasePage {
 
-    public static final String MESSAGE = "You are not redirected to the language customization page";
     @FindBy(xpath = "//span[@class=\"oxd-text oxd-text--span oxd-main-menu-item--name\"]")
     private List<WebElement> selectAdmin;
     @FindBy(xpath = "//span[@class = \"oxd-topbar-body-nav-tab-item\"]")
@@ -43,7 +41,6 @@ public class AdminPage extends BasePage {
     private WebElement browseSpecification;
     @FindBy(xpath = "//button[@class = \"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\"]")
     private WebElement saveJob;
-
 
 
     public AdminPage(WebDriver driver) {
@@ -115,18 +112,15 @@ public class AdminPage extends BasePage {
 
     public void addJobDescription() {
         jobDescription.get(0).sendKeys("Automation Tester");
-
-
     }
 
-    public void addSpecificationJob(){
+    public void addSpecificationJob() {
         browseSpecification.sendKeys("/Users/bichira/AutomationProgram/automation-learning/src/test/resources/utils/Screenshot 2023-09-06 at 11.38.35.png");
     }
-    public void clickSaveJob(){
+
+    public void clickSaveJob() {
         saveJob.click();
     }
-
-
 
 
 }

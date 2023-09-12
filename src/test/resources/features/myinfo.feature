@@ -1,4 +1,3 @@
-@test
 Feature: My info page feature
 
   Background:
